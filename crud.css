@@ -1,0 +1,122 @@
+.bg
+{
+  background-image: url(images/background.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 50vh;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Italiana", serif;
+  letter-spacing: -0.5px;
+  font-weight: 700;
+  padding-bottom: 10px;
+}
+#addModal,#edit,#delete
+{
+  color: #eec78c;
+}
+.bghead
+{
+  background-color: #1d373877;
+}
+.box
+{
+  border-radius: 10px;
+}
+.bgmodal
+{
+  background-color: #39686a;
+}
+.button:hover {
+  color: white;
+  background-color: #eec78c;
+  border: none;
+}
+.button {
+  background-color: #39686a;
+  color: white;
+  border-radius: 10px;
+  border: none;
+}
+.widt
+{
+  width: 49%;
+}
+.file-input,
+.file-inputs {
+  width: 100%;
+  height: 200px;
+  background-color: aliceblue;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  position: relative;
+  overflow: hidden;
+}
+.file-input input[type="file"],
+.file-inputs input[type="file"] {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+}
+#previewImage,
+#previewImages {
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+.location {
+  background: rgba(23, 20, 20, 0.334);
+  border-radius: 30px;
+  height: 10%;
+  width: 100%;
+}
+button.edit {
+  color: white;
+  background-color: #c2b99f;
+  border: none;
+}
+button.edit:hover {
+  color: black;
+  background-color: #d3bb74;
+  border: none;
+}
+button.delete {
+  background-color: #ff9191;
+  border: none;
+}
+button.delete:hover {
+  color: black;
+  background-color: #fd2c2c;
+  border: none;
+}
+
+button.buttons {
+  filter: drop-shadow(11px 4px 10px rgba(0, 0, 0, 0.34));
+  border: none;
+  color: black;
+  background: rgba(255, 255, 255, 0.66);
+  box-shadow: 4px 8px 27px 4px rgba(0, 0, 0, 0.51);
+  border-radius: 30px;
+}
+button.buttons:hover {
+  background-color: #39686a;
+  color: white;
+  filter: drop-shadow(11px 4px 10px rgba(0, 0, 0, 0.34));
+  background: #39686a;
+  box-shadow: 4px 8px 27px 4px rgba(0, 0, 0, 0.51);
+}
+.back{
+  background-color: #070909cb;
+  height: 50px;
+  padding: 10px;
+}
