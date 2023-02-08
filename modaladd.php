@@ -16,7 +16,7 @@
             <h2>Ajouter l'anonce</h2>
             <div class="file-input d-md-flex flex-column justify-content-center align-items-center mb-3">
               <img id="icon" src="images/upload.svg" alt="Upload Icon" />
-              <input type="file" name="imageadd" id="fileInput" />
+              <input type="file" name="fileInput" id="fileInput" />
               <img id="previewImage" src="#" alt="Image Preview" />
             </div>
           </div>

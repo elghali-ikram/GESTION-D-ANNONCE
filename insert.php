@@ -9,16 +9,13 @@ if($_SERVER["REQUEST_METHOD"]==="POST"){
     $type = $_POST['type'];
     $description = $_POST['description'];
     $date = date('Y-m-d');
-    $fileName = $_FILES["imageadd"]["name"];
-        $tempName = $_FILES["imageadd"]["tmp_name"];
-        $fileSize = $_FILES['imageadd']['size'];
-        $folder = "images/$fileName";
-    echo $folder;
+        $fileName = $_FILES["fileInput"]["name"];
+        $tempName = $_FILES["fileInput"]["tmp_name"];
+        $fileSize = $_FILES['fileInput']['size'];
+        $folder = "images/" . $fileName;
         $validImageExtension = ['jpg', 'jpeg', 'png'];
         $imageExtension = explode('.', $fileName);
         $imageExtension = strtolower(end($imageExtension));
-
-            try {
                 move_uploaded_file($tempName, $folder);
                     $sql = "INSERT INTO Annonces(titre,image,description,superficie,adresse,montant,dateAnnonce,typeAnnonce) VALUES('$title','$folder','$description','$superficie','$address','$price','$date','$type')";
                     if (mysqli_query($conn, $sql)) {
@@ -28,11 +25,7 @@ if($_SERVER["REQUEST_METHOD"]==="POST"){
                     }
                     mysqli_close($conn);
                     header("Location:crud.php");
-         
-            }catch (Exception $e) {
-                // code to handle the exception
-                echo 'Caught exception: ',  $e->getMessage(), "\n";
-            }
+
 
         }
 

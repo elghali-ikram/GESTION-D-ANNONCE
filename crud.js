@@ -27,7 +27,7 @@ fileInputs.addEventListener("change", function() {
     reader.addEventListener("load", function() {
       previewImages.style.display = "block";
       previewImages.setAttribute("src", this.result);
-      icon.style.display = "none";
+      icons.style.display = "none";
     });
     reader.readAsDataURL(file);
   } else {
